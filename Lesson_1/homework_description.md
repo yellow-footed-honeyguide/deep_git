@@ -1,2 +1,2 @@
 # Lesson 1 Homework
-Link: https://github.com/yellow-footed-honeyguide/deep_git_lesson1_hw
+Please, download  broken_calculatro_repo.zip separately and read homework description
