@@ -1,4 +1,4 @@
-# Lesson_1 Git Commands
+# Lesson 1 Git Commands
 
 ⚙️ `git cat-file -p 75675257f7f4180abd2d01fbc6e6d71dfb238f41`
 -  Show content of git object in pretty format
