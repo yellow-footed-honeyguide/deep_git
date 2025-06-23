@@ -14,7 +14,7 @@ You got a project from a junior developer. The git history is a disaster. Your j
 
 ## Your Mission
 
-1. Clone the project
+1. Download git-history-disaster.zip
 2. Use `git rebase -i` to clean this mess
 3. Final history must be:
    - Logical commit order
