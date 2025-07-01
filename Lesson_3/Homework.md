@@ -1,7 +1,9 @@
 # Homework: Git Hooks & GitHub Actions 🚀
 
 ## Assignment Overview
-Create a Python/JS/C++ project with Git hooks and GitHub Actions that automatically checks code quality (Zip the project after creation for submission).
+Create a Python/JS/C++ project with Git hooks and GitHub Actions that automatically checks code quality.
+
+> Attention! Submit your project as a zip file!
 
 ## Requirements
 
