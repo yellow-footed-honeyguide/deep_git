@@ -1,0 +1,49 @@
+git_workflows_ascii.md
+
+
+
+https://lkml.org/lkml/2025/5/31/373
+rebase только для своих веток
+
+
+Git rebase reword and squash
+"""
+# Первый коммит (основа)
+echo "console.log('Hello');" > script.js
+git add script.js
+git commit -m "Добавил скрипт"
+
+# Второй коммит (дополнение)
+echo "console.log('World');" >> script.js
+git add script.js
+git commit -m "Дописал вывод"
+
+# Третий коммит (фикс опечатки)
+sed -i '' 's/World/WORLD/g' script.js  # Меняем 'World' на 'WORLD' 
+git add script.js
+git commit -m "Исправил регистр"
+
+git rebase -i --root
+"""
+
+Git rebase reorder
+"""
+echo "Hello, Rebase!" > file1.txt
+git add file1.txt
+git commit -m "Первый коммит"
+
+
+echo "Ещё изменения" >> file1.txt
+git add file1.txt
+git commit -m "Второй коммит"
+
+echo "И ещё разок!" >> file1.txt
+git add file1.txt
+git commit -m "Третий коммит"
+
+git add 
+git rebase --continue
+"""
+
+
+
