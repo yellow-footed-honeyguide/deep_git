@@ -1,2 +1,3 @@
 chmod +x pre_commit_hook
-git commit -m "Your message" --no-verify
+git commit -m "Your message" --no-verify / -n
+chmod -x .git/hooks/pre-commit
