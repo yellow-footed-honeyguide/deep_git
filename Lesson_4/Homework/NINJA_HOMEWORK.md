@@ -18,10 +18,28 @@ Fix a broken Git repository containing a Python string processing library. You'l
 The repository had several important commits lost after a `git reset --hard`. 
 Use Git's reflog to identify and restore these commits.
 
-### 2. Find and Fix the Bug
-The `is_palindrome()` function has a bug - it doesn't handle case sensitivity properly:
+### 2. Find and Fix the Bug (not fix this bug while first task!)
+The `is_palindrome()` function has a bug - it doesn't handle case sensitivity properly.
+For manual or automatic bisect command you can use this script (bisect_test.py) in order to verify this is bad or good commit
 ```python
-print(is_palindrome("Anna"))  # Should return True but returns False
+import sys
+
+try:
+    from calculator import divide
+    try:
+        from string_processor import is_palindrome
+        assert is_palindrome("Anna") == True
+        print("GOOD")
+        exit(0)
+    except AssertionError:
+        print("BAD: Fails case-insensitive check")
+        exit(1)
+    except:
+        print("BAD: Other error")
+        exit(1)
+except ImportError:
+    print("GOOD: Function not exists")
+    sys.exit(0)
 ```
 Use git bisect to:
 
