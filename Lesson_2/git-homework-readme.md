@@ -28,8 +28,5 @@ You got a project from a junior developer. The git history is a disaster. Your j
 - Don't lose any code changes
 - Make history beautiful
 
-## Deliverables
-
-Push your fixed branch as `main-fixed` to show the result.
 
 Good luck!
